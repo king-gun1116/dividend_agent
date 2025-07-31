@@ -1,0 +1,6 @@
+venv_agent/
+venv_pipeline/
+__pycache__/
+*.pyc
+.DS_Store
+*.lock

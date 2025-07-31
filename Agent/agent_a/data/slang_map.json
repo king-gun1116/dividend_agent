@@ -1,0 +1,21 @@
+{
+    "떡상": {"type": "recent_rally", "window": "7d", "threshold": "top10"},
+    "급등": {"type": "recent_rally", "window": "1d", "min_return": "10%"},
+    "난리났다": {"type": "recent_rally", "window": "1d", "threshold": "top5"},
+    "슈팅": {"type": "recent_rally", "window": "1d", "min_return": "15%"},
+    "떡락":  {"type": "recent_crash", "window": "7d", "threshold": 10},
+    "급락": {"type": "recent_crash", "window": "1d", "max_loss": "10%"},
+    "top10": {"type": "recent_rally", "window": "7d", "threshold": 10},
+    "bottom10": {"type": "recent_crash", "window": "7d", "threshold": 10},
+    "하위10%": {"type": "recent_crash", "window": "7d", "threshold": null, "percentile": 10},
+    "상위10%": {"type": "recent_rally", "window": "7d", "threshold": null, "percentile": 90},
+    "패닉셀": {"type": "panic_sell", "window": "1d", "max_loss": "8%"},
+    "골든크로스": {"type": "technical_pattern", "pattern": "golden_cross"},
+    "데드크로스": {"type": "technical_pattern", "pattern": "death_cross"},
+    "적삼병": {"type": "candlestick_pattern", "pattern": "three_white_soldiers"},
+    "흑삼병": {"type": "candlestick_pattern", "pattern": "three_black_crows"},
+    "횡보장": {"type": "sideways_market", "window": "20d", "max_var": "±3%"},
+    "조정장": {"type": "market_correction", "window": "7d", "drop_pct": "10%"},
+    "연속상한가": {"type": "limit_up_streak", "days": 2},
+    "역대급": {"type": "historical_extreme", "metric": "return", "rank": "top1"}
+  }
